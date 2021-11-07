@@ -1,0 +1,29 @@
+{
+  "name": "zerone",
+  "version": "0.0.1",
+  "description": "A simple game server engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voidest1/zerone.git"
+  },
+  "keywords": [
+    "game",
+    "engine",
+    "mud",
+    "server"
+  ],
+  "author": "Leon Liu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/voidest1/zerone/issues"
+  },
+  "homepage": "https://github.com/voidest1/zerone#readme",
+  "dependencies": {
+    "telnetlib": "^1.0.1",
+    "ws": "^8.2.3"
+  }
+}
