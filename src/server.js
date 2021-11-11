@@ -99,7 +99,7 @@ class Server extends Base{
         }else if(serverType === ServerType.stTelnet){
             this.server = Telnet.createServer({}, (c) => {
                 c.on('negotiated', (d) => {
-                    const ip = '127.0.0.1';
+                    const ip = c.socket.remoteAddress;
                     const client = new TlnClient(c, ip);
                     client.on('message', self, 'onMessage');
                     self.clients.push(client);
